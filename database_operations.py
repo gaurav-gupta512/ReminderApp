@@ -5,8 +5,8 @@ connection=sql.connect('test06-21.db')
 cursor=connection.cursor()
 
 tbname = '' # actual user database
-tb2name = '' # for notification counter 
-tb3name = '' #for options menu
+tb2name = '' # for notification counter ,but the idea was discarded later because of integrity issues
+tb3name = '' # for options menu
 
 def checktable():
     global tbname
@@ -154,19 +154,3 @@ table3name('optionsmenu3')
 result = query_all3()
 if len(result) == 0:
     add_one3('solar','info','10000','Yes','Keep')
-
-# res = query_all2()
-# for r in res:
-#     print(r)
-# print('---------------------------------')
-
-# bes = query_all()
-# for i in bes:
-#     print(i)
-#     print('-------------------------------------------------------------------------------------------------')
-
-# bes = query_all2()
-# for i in bes:
-#     print(i)
-#     print('-------------------------------------------------------------------------------------------------')
-
