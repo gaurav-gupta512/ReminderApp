@@ -11,7 +11,7 @@ import database_operations as db # database functions
 from time import * # time functions
 from datetime import datetime # datetime functions
 from PIL import ImageGrab # for screenshot
-import honki_utility as util # utility functions
+import reminder_utility as util # utility functions
 import os # os functions
 
 # ++++++++++ starting with all the functions that will be proqued ++++++++++
